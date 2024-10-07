@@ -1,0 +1,319 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #01bdc4;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav li a:hover{
+    color: #492700;
+    text-decoration: none;
+    background-color: white;
+    padding: 10PX;
+    border-radius: 15px;
+}
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+}
+.iconos a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 25px;
+}
+.iconos a:hover {
+    color: #ffffff;
+    border: 2px double;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* aquì se implementan los estilos css para la seccion uno*/
+.principal {
+    background-image: url('/imagen/foto01.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 650px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    color: #f5f5f5;
+    padding: 2px;
+    background: rgba(80, 88, 92, 0.295);
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+    font-size: 35px;
+}
+
+.contenidouno h2{
+    margin-bottom: 35px;
+    letter-spacing: 12px;
+}
+
+.contenidouno p{
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+}
+
+.button {
+    background-color: #0026ce;
+    color: whitesmoke;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+.button:hover {
+    background-color: #e7f2fd;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+/*estilos para el contenido dos*/
+.banner {
+    background-image: url('/imagen/foto02.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidodos {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.contenidodos h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.figuras {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.figuras a {
+    margin: 0 10px;
+    color: #faf7f7;
+    font-size: 20px;
+}
+.figuras a:hover {
+    color: #050504;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+/*creando la seccion 03 del contenido de la pagina*/
+.galeria {
+    background-color: #000000;
+    padding: 50px 0;
+    border-radius: 5px;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    letter-spacing: 7px;
+    font-size: 35px;
+}
+
+.galeria p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height:5px ;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.contenidotres {
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.contenidotres .columna {
+    flex: 1;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+.contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.contenidotres .columna p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.contenidotres .columna a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #0026ce;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.contenidotres .columna a:hover {
+    background-color: #e7f2fd;
+    color: black;
+    font-size: 18px;
+}
+
+/*creando el Footer - pie de pagina final de la pagina*/
+.footer {
+    background-color: #383838;
+    /* color: #e90000; */
+    padding: 20px;
+}
+
+.filas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+h3, p {
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h4 {
+    color: #ffffff;
+    margin: 0px;    
+    text-align: center;
+    font-size: 20px;
+}
+h4:hover {
+    font-size: 25px;
+    color: #000000;
+}
+
+.social-icons1 {
+    display: flex;
+}
+
+/* Aquí puedes agregar tu CSS */
+.social-icons {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #d5f0f4;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000000; /* Cambia esto según el color que desees para el hover */
+    background-color: white;
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 15px;
+}
